@@ -3,7 +3,7 @@ define("CONTENTS_DIR","contents/");
 $json = json_decode(file_get_contents("index.json"), true);
 $item = array_rand($json);
 
-if ($content['disapproval'] < rand(0, 100)) {
+if ($item['disapproval'] < rand(0, 100)) {
   // reload
 }
 
