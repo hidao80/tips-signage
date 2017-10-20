@@ -29,7 +29,6 @@
   - index.json  
 >[
 >   {
->       title: "title of contents",
 >       content: "sample.md",
 >       disapproval: 3
 >   },
