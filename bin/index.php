@@ -14,10 +14,13 @@ $markdown = $json['content'];
 <head>
 	<meta charset="UTF-8" />
 	<title>TIPS SIGNAGE</title>
+	<script src="../js/marked.min.js"></script>
 </head>
 <body>
+	<div id="markdown">
+	</div>
 	<script>
-		marked(<?= $markdown; ?>);
+		document.getElementById('markdown').innerHTML(marked(<?= $markdown; ?>));
 	</script>
 </body>
 </html>
