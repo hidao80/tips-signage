@@ -1,8 +1,5 @@
 linter:
   phpmd:
-    root_dir: 'bin'
-    options:
-      rule: 'phpmd.xml'
 
   JSHint:
     root_dir: 'js'
