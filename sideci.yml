@@ -2,4 +2,3 @@ linter:
   phpmd:
 
   JSHint:
-    root_dir: 'js'

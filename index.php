@@ -20,6 +20,5 @@ $markdown = file_get_contents(CONTENTS_DIR.$item['content']);
 </head>
 <body>
   <div id="markdown"></div>
-  <?= $markdonw.",,,"; ?>
 </body>
 </html>

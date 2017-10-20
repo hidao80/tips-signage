@@ -1,10 +1,10 @@
 [
   {
-    content: "1.md",
-    disapproval: 0
+    "content": "1.md",
+    "disapproval": 0
   },
   {
-    content: "2.md",
-    disapproval: 0
+    "content": "2.md",
+    "disapproval": 0
   }
 ]
