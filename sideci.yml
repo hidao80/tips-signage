@@ -1,8 +1,8 @@
 linter:
-  rubocop:
-    root_dir: 'sideci_demo'
-
   phpmd:
-    root_dir: 'sideci_demo'
+    root_dir: 'bin'
     options:
       rule: 'phpmd.xml'
+
+  JSLint:
+    root_dir: 'js'
