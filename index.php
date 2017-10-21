@@ -2,7 +2,9 @@
 require("settings.php");
 
 $json = json_decode(file_get_contents("index.json"), true);
+var_dump($json);
 $item = array_rand($json);
+var_dump($item);
 
 if ($item['disapproval'] < rand(0, 100)) {
   // reload
