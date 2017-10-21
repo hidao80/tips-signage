@@ -22,10 +22,14 @@ $markdown = file_get_contents(CONTENTS_DIR.$json[$index]['content']);
   <script src="js/marked.min.js"></script>
 </head>
 <body>
-  <div id="markdown">
-    <script>
-      marked('<?= $markdown; ?>');
-    </script>
-  </div>
+  <div id='md'></div>
+  <script>
+    document.getElementById('md').innerHTML = marked(`<?= $markdown ?>`);
+
+    function reload() {
+      location.href = "index.php";
+    }
+    setTimeout("reload()", <?= RELOAD_MIN ?>*60000);
+  </script>
 </body>
 </html>
