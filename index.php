@@ -18,13 +18,14 @@ $markdown = file_get_contents(CONTENTS_DIR.$json[$index]['content']);
 <head>
   <meta charset="UTF-8" />
   <title>TIPS SIGNAGE</title>
-  <script src="js/is_debug_js.js"></script>
+  <script src="js/ios_debug_js.js"></script>
   <script src="js/marked.min.js"></script>
 </head>
 <body>
- <div id="markdown"></div>
-  <script>
-    document.getElementById("markdown").innerHTML = marked("<?= $markdown; ?>");
-  </script>
+  <div id="markdown">
+    <script>
+      marked('<?= $markdown; ?>');
+    </script>
+  </div>
 </body>
 </html>
