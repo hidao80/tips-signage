@@ -1,4 +1,5 @@
 linter:
   phpmd:
-
-  JSHint:
+    options:
+      rule: cleancode,codesize,controversial,design,naming,unusedcode
+  jshint:
