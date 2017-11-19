@@ -1,5 +1,12 @@
 linter:
+  code_sniffer:
+    options:
+      encodeing: utf-8
+
   phpmd:
     options:
       rule: cleancode,codesize,controversial,design,naming,unusedcode
+
   jshint:
+  
+  eslint:
