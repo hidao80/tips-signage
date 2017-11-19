@@ -2,15 +2,12 @@
 require("settings.php");
 
 $json = json_decode(file_get_contents("index.json"), true);
-//var_dump($json);
 $index = array_rand($json);
 
 if ($item['disapproval'] < rand(0, 100)) {
   // reload
 }
-//print_r($json[$index]['content']);
 $markdown = file_get_contents(CONTENTS_DIR.$json[$index]['content']);
-//print_r($markdown);
 ?>
 
 <!doctype html>
